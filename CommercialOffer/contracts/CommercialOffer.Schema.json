@@ -1,0 +1,721 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "additionalProperties": true,
+  "title": "Root schema.",
+  "description": "An explanation about the puropose of this instance described by this schema.",
+  "name": "/",
+  "properties": {
+      "invoices": {
+          "id": "http://jsonschema.net/invoices",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": false,
+          "additionalItems": true,
+          "title": "Invoices schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "invoices",
+          "items": [
+            {
+                "id": "http://jsonschema.net/invoices/0",
+                "type": "object",
+                "additionalProperties": true,
+                "title": "0 schema.",
+                "description": "An explanation about the puropose of this instance described by this schema.",
+                "name": "0",
+                "properties": {
+                    "id": {
+                        "id": "http://jsonschema.net/invoices/0/id",
+                        "type": "string",
+                        "minLength": 1,
+                        "title": "Id schema.",
+                        "description": "An explanation about the puropose of this instance described by this schema.",
+                        "name": "id",
+                        "enum": [
+                          null,
+                          "1"
+                        ]
+                    },
+                    "beginDate": {
+                        "id": "http://jsonschema.net/invoices/0/beginDate",
+                        "type": "string",
+                        "minLength": 1,
+                        "title": "BeginDate schema.",
+                        "description": "An explanation about the puropose of this instance described by this schema.",
+                        "name": "beginDate",
+                        "enum": [
+                          null,
+                          "1900-01-01T01:01:01+06:00"
+                        ]
+                    },
+                    "endDate": {
+                        "id": "http://jsonschema.net/invoices/0/endDate",
+                        "type": "string",
+                        "minLength": 1,
+                        "title": "EndDate schema.",
+                        "description": "An explanation about the puropose of this instance described by this schema.",
+                        "name": "endDate",
+                        "enum": [
+                          null,
+                          "1900-01-01T01:01:01+06:00"
+                        ]
+                    },
+                    "firm": {
+                        "id": "http://jsonschema.net/invoices/0/firm",
+                        "type": "object",
+                        "additionalProperties": true,
+                        "title": "Firm schema.",
+                        "description": "An explanation about the puropose of this instance described by this schema.",
+                        "name": "firm",
+                        "properties": {
+                            "id": {
+                                "id": "http://jsonschema.net/invoices/0/firm/id",
+                                "type": "string",
+                                "minLength": 1,
+                                "title": "Id schema.",
+                                "description": "An explanation about the puropose of this instance described by this schema.",
+                                "name": "id",
+                                "enum": [
+                                  null,
+                                  "1"
+                                ]
+                            },
+                            "Name": {
+                                "id": "http://jsonschema.net/invoices/0/firm/Name",
+                                "type": "string",
+                                "minLength": 1,
+                                "title": "Name schema.",
+                                "description": "An explanation about the puropose of this instance described by this schema.",
+                                "name": "Name",
+                                "enum": [
+                                  null,
+                                  "Фирма1"
+                                ]
+                            }
+                        }
+                    },
+                    "invoiceItems": {
+                        "id": "http://jsonschema.net/invoices/0/invoiceItems",
+                        "type": "array",
+                        "minItems": 1,
+                        "uniqueItems": false,
+                        "additionalItems": true,
+                        "title": "InvoiceItems schema.",
+                        "description": "An explanation about the puropose of this instance described by this schema.",
+                        "name": "invoiceItems",
+                        "items": {
+                            "id": "http://jsonschema.net/invoices/0/invoiceItems/0",
+                            "type": "object",
+                            "additionalProperties": true,
+                            "title": "0 schema.",
+                            "description": "An explanation about the puropose of this instance described by this schema.",
+                            "name": "0",
+                            "properties": {
+                                "type": {
+                                    "id": "http://jsonschema.net/invoices/0/invoiceItems/0/type",
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "title": "Type schema.",
+                                    "description": "An explanation about the puropose of this instance described by this schema.",
+                                    "name": "type",
+                                    "enum": [
+                                      null,
+                                      "CPS"
+                                    ]
+                                },
+                                "nomenclatureElementId": {
+                                    "id": "http://jsonschema.net/invoices/0/invoiceItems/0/nomenclatureElementId",
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "title": "NomenclatureElementId schema.",
+                                    "description": "An explanation about the puropose of this instance described by this schema.",
+                                    "name": "nomenclatureElementId",
+                                    "enum": [
+                                      null,
+                                      "123123"
+                                    ]
+                                },
+                                "saleParams": {
+                                    "id": "http://jsonschema.net/invoices/0/invoiceItems/0/saleParams",
+                                    "type": "object",
+                                    "additionalProperties": true,
+                                    "title": "SaleParams schema.",
+                                    "description": "An explanation about the puropose of this instance described by this schema.",
+                                    "name": "saleParams",
+                                    "properties": {
+                                        "priceCost": {
+                                            "id": "http://jsonschema.net/invoices/0/invoiceItems/0/saleParams/priceCost",
+                                            "type": "string",
+                                            "minLength": 1,
+                                            "title": "PriceCost schema.",
+                                            "description": "An explanation about the puropose of this instance described by this schema.",
+                                            "name": "priceCost",
+                                            "enum": [
+                                              null,
+                                              "123,12"
+                                            ]
+                                        },
+                                        "amount": {
+                                            "id": "http://jsonschema.net/invoices/0/invoiceItems/0/saleParams/amount",
+                                            "type": "integer",
+                                            "multipleOf": 1,
+                                            "maximum": 100,
+                                            "minimum": 1,
+                                            "exclusiveMaximum": false,
+                                            "exclusiveMinimum": false,
+                                            "title": "Amount schema.",
+                                            "description": "An explanation about the puropose of this instance described by this schema.",
+                                            "name": "amount",
+                                            "enum": [
+                                              null,
+                                              1
+                                            ]
+                                        }
+                                    }
+                                },
+                                "discounting": {
+                                    "id": "http://jsonschema.net/invoices/0/invoiceItems/0/discounting",
+                                    "type": "object",
+                                    "additionalProperties": true,
+                                    "title": "Discounting schema.",
+                                    "description": "An explanation about the puropose of this instance described by this schema.",
+                                    "name": "discounting",
+                                    "properties": {
+                                        "absoluteValue": {
+                                            "id": "http://jsonschema.net/invoices/0/invoiceItems/0/discounting/absoluteValue",
+                                            "type": "string",
+                                            "minLength": 1,
+                                            "title": "AbsoluteValue schema.",
+                                            "description": "An explanation about the puropose of this instance described by this schema.",
+                                            "name": "absoluteValue",
+                                            "enum": [
+                                              null,
+                                              "123,12"
+                                            ]
+                                        },
+                                        "percent": {
+                                            "id": "http://jsonschema.net/invoices/0/invoiceItems/0/discounting/percent",
+                                            "type": "string",
+                                            "minLength": 1,
+                                            "title": "Percent schema.",
+                                            "description": "An explanation about the puropose of this instance described by this schema.",
+                                            "name": "percent",
+                                            "enum": [
+                                              null,
+                                              "10.00"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "payablePlan": {
+                                    "id": "http://jsonschema.net/invoices/0/invoiceItems/0/payablePlan",
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "title": "PayablePlan schema.",
+                                    "description": "An explanation about the puropose of this instance described by this schema.",
+                                    "name": "payablePlan",
+                                    "enum": [
+                                      null,
+                                      "1231241241,12"
+                                    ]
+                                },
+                                "subInvoiceItems": {
+                                    "id": "http://jsonschema.net/invoices/0/invoiceItems/0/subInvoiceItems",
+                                    "type": "object",
+                                    "additionalProperties": true,
+                                    "title": "SubInvoiceItems schema.",
+                                    "description": "An explanation about the puropose of this instance described by this schema.",
+                                    "name": "subInvoiceItems",
+                                    "properties": {
+                                        "nomenclatureElementId": {
+                                            "id": "http://jsonschema.net/invoices/0/invoiceItems/0/subInvoiceItems/nomenclatureElementId",
+                                            "type": "string",
+                                            "minLength": 1,
+                                            "title": "NomenclatureElementId schema.",
+                                            "description": "An explanation about the puropose of this instance described by this schema.",
+                                            "name": "nomenclatureElementId",
+                                            "enum": [
+                                              null,
+                                              "1231233"
+                                            ]
+                                        },
+                                        "linkingObjects": {
+                                            "id": "http://jsonschema.net/invoices/0/invoiceItems/0/subInvoiceItems/linkingObjects",
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "uniqueItems": false,
+                                            "additionalItems": true,
+                                            "title": "LinkingObjects schema.",
+                                            "description": "An explanation about the puropose of this instance described by this schema.",
+                                            "name": "linkingObjects",
+                                            "items": [
+                                              {
+                                                  "id": "http://jsonschema.net/invoices/0/invoiceItems/0/subInvoiceItems/linkingObjects/0",
+                                                  "type": "object",
+                                                  "additionalProperties": true,
+                                                  "title": "0 schema.",
+                                                  "description": "An explanation about the puropose of this instance described by this schema.",
+                                                  "name": "0",
+                                                  "properties": {
+                                                      "rubricId": {
+                                                          "id": "http://jsonschema.net/invoices/0/invoiceItems/0/subInvoiceItems/linkingObjects/0/rubricId",
+                                                          "type": "string",
+                                                          "minLength": 1,
+                                                          "title": "RubricId schema.",
+                                                          "description": "An explanation about the puropose of this instance described by this schema.",
+                                                          "name": "rubricId",
+                                                          "enum": [
+                                                            null,
+                                                            "1"
+                                                          ]
+                                                      },
+                                                      "cardId": {
+                                                          "id": "http://jsonschema.net/invoices/0/invoiceItems/0/subInvoiceItems/linkingObjects/0/cardId",
+                                                          "type": "string",
+                                                          "minLength": 1,
+                                                          "title": "CardId schema.",
+                                                          "description": "An explanation about the puropose of this instance described by this schema.",
+                                                          "name": "cardId",
+                                                          "enum": [
+                                                            null,
+                                                            "1"
+                                                          ]
+                                                      }
+                                                  }
+                                              },
+                                              {
+                                                  "id": "http://jsonschema.net/invoices/0/invoiceItems/0/subInvoiceItems/linkingObjects/1",
+                                                  "type": "object",
+                                                  "additionalProperties": true,
+                                                  "title": "1 schema.",
+                                                  "description": "An explanation about the puropose of this instance described by this schema.",
+                                                  "name": "1",
+                                                  "properties": {
+                                                      "rubricId": {
+                                                          "id": "http://jsonschema.net/invoices/0/invoiceItems/0/subInvoiceItems/linkingObjects/1/rubricId",
+                                                          "type": "string",
+                                                          "minLength": 1,
+                                                          "title": "RubricId schema.",
+                                                          "description": "An explanation about the puropose of this instance described by this schema.",
+                                                          "name": "rubricId",
+                                                          "enum": [
+                                                            null,
+                                                            "2"
+                                                          ]
+                                                      },
+                                                      "cardId": {
+                                                          "id": "http://jsonschema.net/invoices/0/invoiceItems/0/subInvoiceItems/linkingObjects/1/cardId",
+                                                          "type": "string",
+                                                          "minLength": 1,
+                                                          "title": "CardId schema.",
+                                                          "description": "An explanation about the puropose of this instance described by this schema.",
+                                                          "name": "cardId",
+                                                          "enum": [
+                                                            null,
+                                                            "2"
+                                                          ]
+                                                      }
+                                                  }
+                                              }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": [
+                  "id",
+                  "beginDate",
+                  "endDate",
+                  "firm",
+                  "invoiceItems"
+                ]
+            },
+            {
+                "id": "http://jsonschema.net/invoices/1",
+                "type": "object",
+                "additionalProperties": true,
+                "title": "1 schema.",
+                "description": "An explanation about the puropose of this instance described by this schema.",
+                "name": "1",
+                "properties": {
+                    "id": {
+                        "id": "http://jsonschema.net/invoices/1/id",
+                        "type": "string",
+                        "minLength": 1,
+                        "title": "Id schema.",
+                        "description": "An explanation about the puropose of this instance described by this schema.",
+                        "name": "id",
+                        "enum": [
+                          null,
+                          "2"
+                        ]
+                    },
+                    "beginDate": {
+                        "id": "http://jsonschema.net/invoices/1/beginDate",
+                        "type": "string",
+                        "minLength": 1,
+                        "title": "BeginDate schema.",
+                        "description": "An explanation about the puropose of this instance described by this schema.",
+                        "name": "beginDate",
+                        "enum": [
+                          null,
+                          "1900-01-01T01:01:01+06:00"
+                        ]
+                    },
+                    "endDate": {
+                        "id": "http://jsonschema.net/invoices/1/endDate",
+                        "type": "string",
+                        "minLength": 1,
+                        "title": "EndDate schema.",
+                        "description": "An explanation about the puropose of this instance described by this schema.",
+                        "name": "endDate",
+                        "enum": [
+                          null,
+                          "1900-01-01T01:01:01+06:00"
+                        ]
+                    },
+                    "firm": {
+                        "id": "http://jsonschema.net/invoices/1/firm",
+                        "type": "object",
+                        "additionalProperties": true,
+                        "title": "Firm schema.",
+                        "description": "An explanation about the puropose of this instance described by this schema.",
+                        "name": "firm",
+                        "properties": {
+                            "id": {
+                                "id": "http://jsonschema.net/invoices/1/firm/id",
+                                "type": "string",
+                                "minLength": 1,
+                                "title": "Id schema.",
+                                "description": "An explanation about the puropose of this instance described by this schema.",
+                                "name": "id",
+                                "enum": [
+                                  null,
+                                  "2"
+                                ]
+                            },
+                            "Name": {
+                                "id": "http://jsonschema.net/invoices/1/firm/Name",
+                                "type": "string",
+                                "minLength": 1,
+                                "title": "Name schema.",
+                                "description": "An explanation about the puropose of this instance described by this schema.",
+                                "name": "Name",
+                                "enum": [
+                                  null,
+                                  "Фирма2"
+                                ]
+                            }
+                        }
+                    },
+                    "invoiceItems": {
+                        "id": "http://jsonschema.net/invoices/1/invoiceItems",
+                        "type": "array",
+                        "minItems": 1,
+                        "uniqueItems": false,
+                        "additionalItems": true,
+                        "title": "InvoiceItems schema.",
+                        "description": "An explanation about the puropose of this instance described by this schema.",
+                        "name": "invoiceItems",
+                        "items": {
+                            "id": "http://jsonschema.net/invoices/1/invoiceItems/0",
+                            "type": "object",
+                            "additionalProperties": true,
+                            "title": "0 schema.",
+                            "description": "An explanation about the puropose of this instance described by this schema.",
+                            "name": "0",
+                            "properties": {
+                                "type": {
+                                    "id": "http://jsonschema.net/invoices/1/invoiceItems/0/type",
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "title": "Type schema.",
+                                    "description": "An explanation about the puropose of this instance described by this schema.",
+                                    "name": "type",
+                                    "enum": [
+                                      null,
+                                      "CPC"
+                                    ]
+                                },
+                                "nomenclatureElementId": {
+                                    "id": "http://jsonschema.net/invoices/1/invoiceItems/0/nomenclatureElementId",
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "title": "NomenclatureElementId schema.",
+                                    "description": "An explanation about the puropose of this instance described by this schema.",
+                                    "name": "nomenclatureElementId",
+                                    "enum": [
+                                      null,
+                                      "123123"
+                                    ]
+                                },
+                                "saleParams": {
+                                    "id": "http://jsonschema.net/invoices/1/invoiceItems/0/saleParams",
+                                    "type": "object",
+                                    "additionalProperties": true,
+                                    "title": "SaleParams schema.",
+                                    "description": "An explanation about the puropose of this instance described by this schema.",
+                                    "name": "saleParams",
+                                    "properties": {
+                                        "budget": {
+                                            "id": "http://jsonschema.net/invoices/1/invoiceItems/0/saleParams/budget",
+                                            "type": "string",
+                                            "minLength": 1,
+                                            "title": "Budget schema.",
+                                            "description": "An explanation about the puropose of this instance described by this schema.",
+                                            "name": "budget",
+                                            "enum": [
+                                              null,
+                                              "123,12"
+                                            ]
+                                        },
+                                        "bids": {
+                                            "id": "http://jsonschema.net/invoices/1/invoiceItems/0/saleParams/bids",
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "uniqueItems": false,
+                                            "additionalItems": true,
+                                            "title": "Bids schema.",
+                                            "description": "An explanation about the puropose of this instance described by this schema.",
+                                            "name": "bids",
+                                            "items": [
+                                              {
+                                                  "id": "http://jsonschema.net/invoices/1/invoiceItems/0/saleParams/bids/0",
+                                                  "type": "object",
+                                                  "additionalProperties": true,
+                                                  "title": "0 schema.",
+                                                  "description": "An explanation about the puropose of this instance described by this schema.",
+                                                  "name": "0",
+                                                  "properties": {
+                                                      "rubricId": {
+                                                          "id": "http://jsonschema.net/invoices/1/invoiceItems/0/saleParams/bids/0/rubricId",
+                                                          "type": "string",
+                                                          "minLength": 1,
+                                                          "title": "RubricId schema.",
+                                                          "description": "An explanation about the puropose of this instance described by this schema.",
+                                                          "name": "rubricId",
+                                                          "enum": [
+                                                            null,
+                                                            "1"
+                                                          ]
+                                                      },
+                                                      "cpc": {
+                                                          "id": "http://jsonschema.net/invoices/1/invoiceItems/0/saleParams/bids/0/cpc",
+                                                          "type": "string",
+                                                          "minLength": 1,
+                                                          "title": "Cpc schema.",
+                                                          "description": "An explanation about the puropose of this instance described by this schema.",
+                                                          "name": "cpc",
+                                                          "enum": [
+                                                            null,
+                                                            "123,12"
+                                                          ]
+                                                      }
+                                                  }
+                                              },
+                                              {
+                                                  "id": "http://jsonschema.net/invoices/1/invoiceItems/0/saleParams/bids/1",
+                                                  "type": "object",
+                                                  "additionalProperties": true,
+                                                  "title": "1 schema.",
+                                                  "description": "An explanation about the puropose of this instance described by this schema.",
+                                                  "name": "1",
+                                                  "properties": {
+                                                      "rubricId": {
+                                                          "id": "http://jsonschema.net/invoices/1/invoiceItems/0/saleParams/bids/1/rubricId",
+                                                          "type": "string",
+                                                          "minLength": 1,
+                                                          "title": "RubricId schema.",
+                                                          "description": "An explanation about the puropose of this instance described by this schema.",
+                                                          "name": "rubricId",
+                                                          "enum": [
+                                                            null,
+                                                            "2"
+                                                          ]
+                                                      },
+                                                      "cpc": {
+                                                          "id": "http://jsonschema.net/invoices/1/invoiceItems/0/saleParams/bids/1/cpc",
+                                                          "type": "string",
+                                                          "minLength": 1,
+                                                          "title": "Cpc schema.",
+                                                          "description": "An explanation about the puropose of this instance described by this schema.",
+                                                          "name": "cpc",
+                                                          "enum": [
+                                                            null,
+                                                            "223,12"
+                                                          ]
+                                                      }
+                                                  }
+                                              }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "discounting": {
+                                    "id": "http://jsonschema.net/invoices/1/invoiceItems/0/discounting",
+                                    "type": "object",
+                                    "additionalProperties": true,
+                                    "title": "Discounting schema.",
+                                    "description": "An explanation about the puropose of this instance described by this schema.",
+                                    "name": "discounting",
+                                    "properties": {
+                                        "absoluteValue": {
+                                            "id": "http://jsonschema.net/invoices/1/invoiceItems/0/discounting/absoluteValue",
+                                            "type": "string",
+                                            "minLength": 1,
+                                            "title": "AbsoluteValue schema.",
+                                            "description": "An explanation about the puropose of this instance described by this schema.",
+                                            "name": "absoluteValue",
+                                            "enum": [
+                                              null,
+                                              "123,12"
+                                            ]
+                                        },
+                                        "percent": {
+                                            "id": "http://jsonschema.net/invoices/1/invoiceItems/0/discounting/percent",
+                                            "type": "string",
+                                            "minLength": 1,
+                                            "title": "Percent schema.",
+                                            "description": "An explanation about the puropose of this instance described by this schema.",
+                                            "name": "percent",
+                                            "enum": [
+                                              null,
+                                              "10.00"
+                                            ]
+                                        }
+                                    }
+                                },
+                                "payablePlan": {
+                                    "id": "http://jsonschema.net/invoices/1/invoiceItems/0/payablePlan",
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "title": "PayablePlan schema.",
+                                    "description": "An explanation about the puropose of this instance described by this schema.",
+                                    "name": "payablePlan",
+                                    "enum": [
+                                      null,
+                                      "1231241241,12"
+                                    ]
+                                },
+                                "subInvoiceItems": {
+                                    "id": "http://jsonschema.net/invoices/1/invoiceItems/0/subInvoiceItems",
+                                    "type": "object",
+                                    "additionalProperties": true,
+                                    "title": "SubInvoiceItems schema.",
+                                    "description": "An explanation about the puropose of this instance described by this schema.",
+                                    "name": "subInvoiceItems",
+                                    "properties": {
+                                        "nomenclatureElementId": {
+                                            "id": "http://jsonschema.net/invoices/1/invoiceItems/0/subInvoiceItems/nomenclatureElementId",
+                                            "type": "string",
+                                            "minLength": 1,
+                                            "title": "NomenclatureElementId schema.",
+                                            "description": "An explanation about the puropose of this instance described by this schema.",
+                                            "name": "nomenclatureElementId",
+                                            "enum": [
+                                              null,
+                                              "1231233"
+                                            ]
+                                        },
+                                        "linkingObjects": {
+                                            "id": "http://jsonschema.net/invoices/1/invoiceItems/0/subInvoiceItems/linkingObjects",
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "uniqueItems": false,
+                                            "additionalItems": true,
+                                            "title": "LinkingObjects schema.",
+                                            "description": "An explanation about the puropose of this instance described by this schema.",
+                                            "name": "linkingObjects",
+                                            "items": [
+                                              {
+                                                  "id": "http://jsonschema.net/invoices/1/invoiceItems/0/subInvoiceItems/linkingObjects/0",
+                                                  "type": "object",
+                                                  "additionalProperties": true,
+                                                  "title": "0 schema.",
+                                                  "description": "An explanation about the puropose of this instance described by this schema.",
+                                                  "name": "0",
+                                                  "properties": {
+                                                      "rubricId": {
+                                                          "id": "http://jsonschema.net/invoices/1/invoiceItems/0/subInvoiceItems/linkingObjects/0/rubricId",
+                                                          "type": "string",
+                                                          "minLength": 1,
+                                                          "title": "RubricId schema.",
+                                                          "description": "An explanation about the puropose of this instance described by this schema.",
+                                                          "name": "rubricId",
+                                                          "enum": [
+                                                            null,
+                                                            "1"
+                                                          ]
+                                                      },
+                                                      "cardId": {
+                                                          "id": "http://jsonschema.net/invoices/1/invoiceItems/0/subInvoiceItems/linkingObjects/0/cardId",
+                                                          "type": "string",
+                                                          "minLength": 1,
+                                                          "title": "CardId schema.",
+                                                          "description": "An explanation about the puropose of this instance described by this schema.",
+                                                          "name": "cardId",
+                                                          "enum": [
+                                                            null,
+                                                            "1"
+                                                          ]
+                                                      }
+                                                  }
+                                              },
+                                              {
+                                                  "id": "http://jsonschema.net/invoices/1/invoiceItems/0/subInvoiceItems/linkingObjects/1",
+                                                  "type": "object",
+                                                  "additionalProperties": true,
+                                                  "title": "1 schema.",
+                                                  "description": "An explanation about the puropose of this instance described by this schema.",
+                                                  "name": "1",
+                                                  "properties": {
+                                                      "rubricId": {
+                                                          "id": "http://jsonschema.net/invoices/1/invoiceItems/0/subInvoiceItems/linkingObjects/1/rubricId",
+                                                          "type": "string",
+                                                          "minLength": 1,
+                                                          "title": "RubricId schema.",
+                                                          "description": "An explanation about the puropose of this instance described by this schema.",
+                                                          "name": "rubricId",
+                                                          "enum": [
+                                                            null,
+                                                            "2"
+                                                          ]
+                                                      },
+                                                      "cardId": {
+                                                          "id": "http://jsonschema.net/invoices/1/invoiceItems/0/subInvoiceItems/linkingObjects/1/cardId",
+                                                          "type": "string",
+                                                          "minLength": 1,
+                                                          "title": "CardId schema.",
+                                                          "description": "An explanation about the puropose of this instance described by this schema.",
+                                                          "name": "cardId",
+                                                          "enum": [
+                                                            null,
+                                                            "2"
+                                                          ]
+                                                      }
+                                                  }
+                                              }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+          ],
+          "required": [
+            "0",
+            "1"
+          ]
+      }
+  },
+  "required": [
+    "invoices"
+  ]
+}

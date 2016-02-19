@@ -1,0 +1,87 @@
+{
+    "invoices": [
+        {
+            "id": "1",
+            "beginDate": "1900-01-01T01:01:01+06:00",
+            "endDate": "1900-01-01T01:01:01+06:00",
+            "firm": {
+                "id": "1",
+                "Name": "Фирма1"
+            },
+            "invoiceItems": [
+                {
+                    "type": "CPS",
+                    "nomenclatureElementId": "123123",
+                    "saleParams": {
+                        "priceCost": "123,12",
+                        "amount": 1
+                    },
+                    "discounting": {
+                        "absoluteValue": "123,12",
+                        "percent": "10.00"
+                    },
+                    "payablePlan": "1231241241,12",
+                    "subInvoiceItems": {
+                        "nomenclatureElementId": "1231233",
+                        "linkingObjects": [
+                            {
+                                "rubricId": "1",
+                                "cardId": "1"
+                            },
+                            {
+                                "rubricId": "2",
+                                "cardId": "2"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "beginDate": "1900-01-01T01:01:01+06:00",
+            "endDate": "1900-01-01T01:01:01+06:00",
+            "firm": {
+                "id": "2",
+                "Name": "Фирма2"
+            },
+            "invoiceItems": [
+                {
+                    "type": "CPC",
+                    "nomenclatureElementId": "123123",
+                    "saleParams": {
+                        "budget": "123,12",
+                        "bids": [
+                            {
+                                "rubricId": "1",
+                                "cpc": "123,12"
+                            },
+                            {
+                                "rubricId": "2",
+                                "cpc": "223,12"
+                            }
+                        ]
+                    },
+                    "discounting": {
+                        "absoluteValue": "123,12",
+                        "percent": "10.00"
+                    },
+                    "payablePlan": "1231241241,12",
+                    "subInvoiceItems": {
+                        "nomenclatureElementId": "1231233",
+                        "linkingObjects": [
+                            {
+                                "rubricId": "1",
+                                "cardId": "1"
+                            },
+                            {
+                                "rubricId": "2",
+                                "cardId": "2"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
